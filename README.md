@@ -1,4 +1,4 @@
-Jokenpô
+#Jokenpô
 
 Este é um simples jogo de Jokenpô (Pedra, Papel e Tesoura) desenvolvido em javascript.
 
@@ -54,8 +54,7 @@ git commit -m "Adicionando nova funcionalidade"
 
 Envie para o repositório:
 
-imagem utilizadas com direitos
--aahihi
+
 
 git push origin minha-melhoria
 
@@ -63,5 +62,8 @@ Abra um Pull Request.
 
 Licença
 
-Este projeto está licenciado sob a [Licença utilizada].
+Este projeto está licenciado sob a MIT.
+
+imagem utilizadas com direitos
+-aahihi
 
