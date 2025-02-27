@@ -1,0 +1,43 @@
+.img-bg{
+    background-image: url(../../assets/imgs/canteiner-img/ai-generated-8464364_1280.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 60%;
+}
+.conteiner h1{
+     font-family: "Metal Mania", system-ui;
+     color: #fff;
+
+     font-size: 4.5rem;
+     text-align: center;
+}
+.conteudo{
+    display: flex;
+    width: 80%;
+    height: 70%;
+    background: linear-gradient(to right, #00c0ca50, #7d2be89a, #86a8e7a1, #91eae485);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+    border-radius: 6px;
+}
+.conteudo img{
+    background:#ede9e988 ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.conteudo img:hover{
+    background-color:#00c0ca9f ;
+}
