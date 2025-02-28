@@ -20,24 +20,63 @@
      text-align: center;
 }
 .conteudo{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: end;
+    
     width: 80%;
     height: 70%;
     background: linear-gradient(to right, #00c0ca50, #7d2be89a, #86a8e7a1, #91eae485);
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
     gap: 50px;
     border-radius: 6px;
+    box-shadow: 1px 1px 8px #ffffffc8;
 }
 .conteudo img{
-    background:#ede9e988 ;
+    background:#000 ;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 1px 1px 4px #000;
     
 }
 .conteudo img:hover{
     background-color:#00c0ca9f ;
+}
+.result{
+    
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: #7925e7e0;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 50px;
+    color: #fff;
+    box-shadow: 1px 1px 8px #ffffffc8;
+    font-family: "Metal Mania", system-ui;
+}
+.text-result{
+    color: #fff;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/4;
+    font-size: 2rem;
+    font-family: 'Poppins';
+}
+.result h2 {
+    padding-top: 20px;
+    border-bottom: 2px solid #fff;
+    
+}
+.result div {
+    flex: 1;
+}
+.result div:nth-child(2),
+.result div:nth-child(1){
+    border-right: 2px solid #fff;
 }
