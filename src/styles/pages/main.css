@@ -4,30 +4,33 @@
     width: 100vw;
     background-size: 100%;
     background-position: center;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;  
 }
+
 .conteiner{
-    
-    height: 60%;
+    height: 70%;
     display: flex;
-    align-items: center;
-    justify-content: ;
+    justify-content: end;
+    padding: 0 30px;
+
 }
  h1{
      font-family: "Metal Mania", system-ui;
      color: #fff;
-
      font-size: 4.5rem;
      text-align: center;
 }
 .conteudo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     align-items: center;
-    background: linear-gradient(to right, #00c0ca50, #7d2be89a, #86a8e7a1, #91eae485);
-    margin: 0 auto;
+    background: linear-gradient(to right, #00c0ca50, #7d2be89a, #86a8e7a1, #91eae485);  
     gap: 30px;
     border-radius: 6px;
     box-shadow: 1px 1px 8px #ffffffc8;
@@ -46,39 +49,38 @@
     background-color:#00c0ca9f ;
 }
 .result{
-    
     display: flex;
     height: 100%;
-    background-color: #7925e7e0;
+    background-color: #e4dfdfc4;
     justify-content: space-around;
-    margin: 0 auto;
     text-align: center;
     border-radius: 6px;
-    
-    color: #fff;
-    box-shadow: 1px 1px 8px #ffffffc8;
+    color: #141313;
+    box-shadow: 1px 1px 8px #000000c8;
     font-family: "Metal Mania", system-ui;
+    border: 2px solid #000;
 }
 .text-result{
     color: #fff;
-    justify-self: center;
-    align-self: center;
-    
+    grid-column: 1/4;
     font-size: 2rem;
     font-family: 'Poppins';
 }
 .result h2 {
     padding: 20px;
-    border-bottom: 2px solid #fff;
-    
+    border-bottom: 2px solid #000000;
+    font-size: 1.1rem;
+    width: 110px;
+    text-align: center;
     
 }
 .result div {
-    flex: 1;
+    flex-grow: 1;
+    font-family: 'Poppins';
 }
 .result div:nth-child(2),
 .result div:nth-child(1){
-    border-right: 2px solid #fff;
+    border-right: 2px solid #000000;
 }
 .reset{
     font-size:2rem;
