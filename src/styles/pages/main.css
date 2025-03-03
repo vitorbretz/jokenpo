@@ -19,6 +19,7 @@
      color: #fff;
      font-size: 4.5rem;
      text-align: center;
+     text-shadow: 2px 2px 2px #000;
 }
 .conteudo{
     position: fixed;
@@ -78,6 +79,10 @@
     flex-grow: 1;
     font-family: 'Poppins';
 }
+.result div div{
+    border: none;
+    background-color: transparent;
+}
 .result div:nth-child(2),
 .result div:nth-child(1){
     border-right: 2px solid #000000;
@@ -94,4 +99,48 @@
 }
 .reset:hover{
     transform: scale(1.1);
+}
+@media (max-width: 1300px){
+    .conteudo{
+        width: 40%;
+    }
+    .result h2{
+        font-size: 1rem;
+        padding: 15px;
+        width: 90px;
+    }
+}
+@media (max-width: 1050px){
+    .conteudo{
+        gap: 20px;
+        padding: 15px;
+        width: 95%;
+        
+    }
+   
+    .conteudo img{
+        width: 120px;
+        height: 120px;
+    }
+    .reset{
+        font-family: 1rem;
+    }
+    .text-result{
+        font-family: 1rem;
+    }
+    .conteiner{
+        height: 85%;
+        align-items: end;
+        justify-content: center;
+    }
+    .result{
+        height: 50%;
+    }
+    .conteudo{
+        top: 34%;
+    }
+    .img-bg{
+        background-size: cover;
+    }
+    
 }
