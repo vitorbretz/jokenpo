@@ -31,7 +31,7 @@
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     align-items: center;
-    background: linear-gradient(to right, #00c0ca50, #7d2be89a, #86a8e7a1, #91eae485);  
+    background: linear-gradient(to right, #00c0caac, #7d2be8bc, #86a8e7ad, #91eae4b4);  
     gap: 30px;
     border-radius: 6px;
     box-shadow: 1px 1px 8px #ffffffc8;
@@ -65,7 +65,8 @@
     color: #fff;
     grid-column: 1/4;
     font-size: 2rem;
-    font-family: 'Poppins';
+    font-family: "Metal Mania", system-ui;
+    text-shadow: 2px 2px 2px #000;
 }
 .result h2 {
     padding: 20px;
@@ -74,6 +75,18 @@
     width: 110px;
     text-align: center;
     
+}
+.resultado{
+    font-size: 2.5rem;
+    font-family: "Metal Mania", system-ui;
+    text-shadow: none;
+    border: none;
+    color: #000;
+    background-color: transparent;
+    box-shadow: none;
+    display: block;
+    text-align: center;
+   
 }
 .result div {
     flex-grow: 1;
@@ -125,8 +138,11 @@
     .reset{
         font-family: 1rem;
     }
-    .text-result{
-        font-family: 1rem;
+    .text-result #about{
+        font-family: 0.9rem;
+        font-family: "Metal Mania", system-ui ;
+        text-shadow: 2px 2px 2px #000;
+        text-align: center;
     }
     .conteiner{
         height: 85%;
