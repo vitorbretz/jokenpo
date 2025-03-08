@@ -2,6 +2,35 @@ const element =  document.querySelectorAll('.conteudo img');
 const spanText =  document.querySelector('#about');
 const resultT = document.querySelector('.resultado');
 
+const score = {
+    wins:0,
+    losses: 0,
+    ties: 0 
+};
+let vitoria = document.querySelector('.win')
+const derrota = document.querySelector('.losser')
+const empate = document.querySelector('.tie')
+
+
+function resultTableWin(){
+    
+    let newElement = document.createElement('div'); // Cria o elemento
+    newElement.innerText = score.wins;             // Adiciona o texto
+    vitoria.appendChild(newElement);   
+}
+function resultTableTie(){
+    
+    let newElement = document.createElement('div'); // Cria o elemento
+    newElement.innerText = score.ties;             // Adiciona o texto
+    empate.appendChild(newElement);   
+}
+function resultTableLosser(){
+    
+    let newElement = document.createElement('div'); // Cria o elemento
+    newElement.innerText = score.losses;             // Adiciona o texto
+    derrota.appendChild(newElement);   
+}
+
 //moves
 const playPedra = document.querySelector('.playPedra');
 const playPapel = document.querySelector('.playPapel');
@@ -16,6 +45,8 @@ playPapel.addEventListener('click', ()=>{
 playTesoura.addEventListener('click', ()=>{
     playGame('Tesoura')
 })
+
+
 
 function randomNumber(){
     const random = Math.random()
@@ -61,6 +92,16 @@ function playGame(playerMove){
         }
     }
     
+    if(result === 'Você ganhou'){
+        score.wins += 1;
+        resultTableWin()
+    }else if(result === 'Voce perdeu'){
+        score.losses += 1;
+        resultTableLosser()
+    }else if(result === 'Empate'){
+        score.ties += 1;
+        resultTableTie()
+    }
     spanText.innerText = (`Você escolheu ${playerMove} é a maquina escolheu ${computerMove}`)
     resultT.innerText = result
 }
