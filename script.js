@@ -132,7 +132,7 @@ function playGame(playerMove) {
     }
 }
 
-resetButton.addEventListener('click', resetGame); // Adiciona o evento de clique
+resetButton.addEventListener('click', resetGame); 
 function resetGame() {
     location.reload(); // Recarrega a página
 }

@@ -1,5 +1,5 @@
 .img-bg{
-    background-image: url(../../assets/imgs/canteiner-img/ai-generated-8464364_1280.jpg);
+    background-image: url(../../assets/imgs/canteiner-img/ai-generated-8612487_1280.jpg);
     height: 100vh;
     width: 100vw;
     background-size: 100%;
@@ -31,11 +31,12 @@
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     align-items: center;
-    background: linear-gradient(to right, #00c0caac, #7d2be8bc, #86a8e7ad, #91eae4b4);  
+    background: linear-gradient(to right, #00c0ca74, #7d2be87b, #86a8e75b, #91eae467);  
     gap: 30px;
     border-radius: 6px;
     box-shadow: 1px 1px 8px #ffffffc8;
     padding: 30px;
+    
 }
 .conteudo img{
     background:#000 ;
@@ -52,7 +53,7 @@
 .result{
     display: flex;
     height: 100%;
-    background-color: #e4dfdfc4;
+    background-color: #e4dfdf97;
     justify-content: space-around;
     text-align: center;
     border-radius: 6px;
@@ -67,6 +68,7 @@
     font-size: 2rem;
     font-family: "Metal Mania", system-ui;
     text-shadow: 2px 2px 2px #000;
+    
 }
 .result h2 {
     padding: 20px;
