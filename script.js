@@ -2,6 +2,8 @@ const element = document.querySelectorAll('.conteudo img');
 const spanText = document.querySelector('#about');
 const resultT = document.querySelector('.resultado');
 
+const resetButton = document.querySelector('.reset');
+
 const score = {
     wins: 0,
     losses: 0,
@@ -46,7 +48,7 @@ function resultTable(type) {
 // Moves
 const playPedra = document.querySelector('.playPedra');
 const playPapel = document.querySelector('.playPapel');
-const playTesoura = document.querySelector('.PlayTesoura');
+const playTesoura = document.querySelector('.playTesoura');
 
 playPedra.addEventListener('click', () => {
     playGame('Pedra');
@@ -128,4 +130,9 @@ function playGame(playerMove) {
         spanText.innerText = 'Você EMPATOU 5X';
         resultT.innerText = 'Reinicie o jogo';
     }
+}
+
+resetButton.addEventListener('click', resetGame); // Adiciona o evento de clique
+function resetGame() {
+    location.reload(); // Recarrega a página
 }
